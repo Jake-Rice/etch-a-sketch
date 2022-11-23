@@ -1,0 +1,50 @@
+* {
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vh;
+  max-height: 100vw;
+  margin: auto;
+  padding: 0 50px 50px 50px;
+}
+
+#grid-container {
+  flex: 1;
+  display: grid;
+  margin: auto;
+  padding: 0 3rem;
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-element {
+  background-color: cyan;
+}
+
+.draw {
+  background-color: magenta;
+}
+
+button {
+  color: black;
+  width: 6rem;
+  height: 2rem;
+  margin: 1rem auto;
+}
