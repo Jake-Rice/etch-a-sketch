@@ -8,7 +8,8 @@ function draw(event) {
 
 function setGridSize() {
   const newSize = prompt("Enter new grid size");
-  if (newSize>100) {
+  if (!newSize) return;
+  else if (newSize>100) {
     alert("Grid size too big (max size 100)");
     return;
   }
@@ -17,7 +18,6 @@ function setGridSize() {
 
 function resetGrid(size) {
   const oldElements = container.querySelectorAll(".grid-element");
-  console.log(oldElements)
   oldElements.forEach(element => element.remove())
   container.classList.gridTemplateColumns = `repeat(${size}, 1fr)`;
   container.classList.gridTemplateRows = `repeat(${size}, 1fr)`;

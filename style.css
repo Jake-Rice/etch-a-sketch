@@ -29,17 +29,16 @@ h1 {
   display: grid;
   margin: auto;
   padding: 0 3rem;
-  background-color: pink;
   height: 100%;
   width: 100%;
 }
 
 .grid-element {
-  background-color: cyan;
+  background-color: lightgray;
 }
 
 .draw {
-  background-color: magenta;
+  background-color: dodgerblue;
 }
 
 button {
